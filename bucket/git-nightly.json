@@ -7,6 +7,6 @@
         "url": "https://github.com/vim/vim/blob/master/LICENSE"
     },
     "url": "https://github.com/vim/vim-win32-installer/releases/download/v8.2.4611/gvim_8.2.4611_x64.zip",
-    "extract_dir": "vim-nightly",
+    "extract_dir": "$0",
     "bin": "vim.exe"
 }
