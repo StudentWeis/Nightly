@@ -1,6 +1,4 @@
-# Nightly
-
-[![Tests](https://github.com/StudentWeis/Nightly/actions/workflows/ci.yml/badge.svg)](https://github.com/StudentWeis/Nightly/actions/workflows/ci.yml) [![Excavator](https://github.com/StudentWeis/Nightly/actions/workflows/excavator.yml/badge.svg)](https://github.com/StudentWeis/Nightly/actions/workflows/excavator.yml)
+# Scoop Bucket Nightly [![Tests](https://github.com/StudentWeis/Nightly/actions/workflows/ci.yml/badge.svg)](https://github.com/StudentWeis/Nightly/actions/workflows/ci.yml) [![Excavator](https://github.com/StudentWeis/Nightly/actions/workflows/excavator.yml/badge.svg)](https://github.com/StudentWeis/Nightly/actions/workflows/excavator.yml)
 
 How do I install these manifests?
 ---------------------------------
