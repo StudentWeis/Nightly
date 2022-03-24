@@ -1,30 +1,26 @@
 {
-    "version": "8.2.4611",
-    "description": "Vim Nightly Version",
+    "version": "8.2.4616",
+    "description": "Vim Nightly Version For Full Feature.",
     "homepage": "https://www.vim.org/",
     "license": {
         "identifier": "Vim License",
         "url": "https://github.com/vim/vim/blob/master/LICENSE"
     },
-    "url": "https://github.com/vim/vim-win32-installer/releases/download/v8.2.4611/gvim_8.2.4611_x64.zip",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/vim/vim-win32-installer/releases/download/v8.2.4616/gvim_8.2.4616_x64.zip",
+            "hash": "8f971819fbdd85ac0d988b342493e37846482426296f5b9c43875ac22f40199f",
+            "extract_dir": "vim"
+        },
+        "32bit": {
+            "url": "https://github.com/vim/vim-win32-installer/releases/download/v8.2.4616/gvim_8.2.4616_x86.zip",
+            "hash": "0121729161b6b30e0bf72b219b23ed294606fef5886f126193b38741d4311784",
+            "extract_dir": "vim"
+        }
+    },
     "extract_dir": "vim",
-    "pre_install": [
-        "Move-Item \"$dir\\`$R0\" \"$dir\\libgcc_s_sjlj-1.dll\"",
-        "Move-Item \"$dir\\GvimExt64\\`$R0\" \"$dir\\GvimExt64\\gvimext.dll\"",
-        "Move-Item \"$dir\\GvimExt64\\`$0\\GvimExt64\\*\" \"$dir\\GvimExt64\"",
-        "Move-Item \"$dir\\`$*\\*\" $dir",
-        "Remove-Item \"$dir\\`$*\", \"$dir\\GvimExt32\", \"$dir\\GvimExt64\\`$0\", \"$dir\\uninstal.*\", \"$dir\\install.exe\", \"$dir\\vim[0-9]*\" -Recurse"
-    ],
-    "post_install": [
-        "'install-context.reg', 'uninstall-context.reg' | ForEach-Object {",
-        "    $vimpath = \"$dir\\gVim.exe\".Replace('\\', '\\\\')",
-        "    $content = (Get-Content \"$bucketsdir\\main\\scripts\\vim\\$_\").Replace('$vim', $vimpath)",
-        "    if ($global) { $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE') }",
-        "    Set-Content \"$dir\\$_\" $content",
-        "}"
-    ],
     "bin": [
-        "vim.exe",
+        "vim82/vim.exe",
         [
             "vim.exe",
             "vi"
@@ -54,7 +50,7 @@
             "vimdiff",
             "-d"
         ],
-        "gvim.exe",
+        "vim82/gvim.exe",
         [
             "gvim.exe",
             "gview",
@@ -84,13 +80,27 @@
             "gvim.exe",
             "gvimdiff",
             "-d"
-        ],
-        "xxd.exe"
+        ]
     ],
     "shortcuts": [
         [
-            "gvim.exe",
-            "gVim"
+            "vim82/gvim.exe",
+            "vim82/gVim"
         ]
-    ]
+    ],
+    "checkver": {
+        "github": "https://github.com/vim/vim-win32-installer"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/vim/vim-win32-installer/releases/download/v$version/gvim_$version_x64.zip",
+                "hash": ""
+            },
+            "32bit": {
+                "url": "https://github.com/vim/vim-win32-installer/releases/download/v$version/gvim_$version_x86.zip",
+                "hash": ""
+            }
+        }
+    }
 }
