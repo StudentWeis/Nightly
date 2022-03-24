@@ -18,6 +18,12 @@
             "yesplaymusic"
         ]
     ],
+    "shortcuts": [
+        [
+            "YesPlayMusic-0.4.1.exe",
+            "yesplaymusic"
+        ]
+    ],
     "checkver": {
         "github": "https://github.com/qier222/YesPlayMusic"
     },
@@ -29,6 +35,12 @@
             }
         },
         "bin": [
+            [
+                "YesPlayMusic-$version.exe",
+                "yesplaymusic"
+            ]
+        ],
+        "shortcuts": [
             [
                 "YesPlayMusic-$version.exe",
                 "yesplaymusic"
