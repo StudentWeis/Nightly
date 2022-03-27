@@ -4,8 +4,8 @@
 
 ## Manifest Lists
 
-- [YesPlayMusic](https://github.com/qier222/YesPlayMusic)
-- [Vim-Nightly](https://github.com/vim/vim-win32-installer)
+- ~[YesPlayMusic](https://github.com/qier222/YesPlayMusic)~：merged to Extras.
+- ~[Vim-Nightly](https://github.com/vim/vim-win32-installer)~：merged to Versions.
 - [Serial-Port-Plotter](https://github.com/CieNTi/serial_port_plotter)
 
 How do I install these manifests?
