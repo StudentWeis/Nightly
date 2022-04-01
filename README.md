@@ -7,6 +7,7 @@
 - ~[YesPlayMusic](https://github.com/qier222/YesPlayMusic)~：merged to Extras.
 - ~[Vim-Nightly](https://github.com/vim/vim-win32-installer)~：merged to Versions.
 - [Serial-Port-Plotter](https://github.com/CieNTi/serial_port_plotter)
+- [YouDaoDict](http://cidian.youdao.com/)
 
 How do I install these manifests?
 ---------------------------------
