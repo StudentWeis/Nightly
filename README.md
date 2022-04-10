@@ -4,8 +4,6 @@
 
 ## Manifest Lists
 
-- ~[YesPlayMusic](https://github.com/qier222/YesPlayMusic)~：merged to Extras.
-- ~[Vim-Nightly](https://github.com/vim/vim-win32-installer)~：merged to Versions.
 - [Serial-Port-Plotter](https://github.com/CieNTi/serial_port_plotter)
 - [YouDaoDict](http://cidian.youdao.com/)
 - [COMTool](https://github.com/Neutree/COMTool)
@@ -20,4 +18,3 @@ How do I contribute new manifests?
 
 - To make a new manifest contribution, please read the [Contributing Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md).
 - If you don't want touching code, you can raise an issue for your request.
-

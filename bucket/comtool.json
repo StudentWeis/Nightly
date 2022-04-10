@@ -1,5 +1,5 @@
 {
-    "version": "2.5.0",
+    "version": "3.0.0",
     "description": "Cross platform communicate assistant",
     "homepage": "https://github.com/Neutree/COMTool",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Neutree/COMTool/releases/download/v2.5.0/comtool_windows_v2.5.0.zip",
-            "hash": "ca1d8d756787c39704b7e33e7397b2a350b263eabee4e57ab8c7588d6b05dc0d"
+            "url": "https://github.com/Neutree/COMTool/releases/download/v3.0.0/comtool_windows_v3.0.0.7z",
+            "hash": "af74bf04a2ffc4e63f206429fd500179afd984b1ac7a9d900d6cf819dc676efa"
         }
     },
     "extract_dir": "comtool",
@@ -21,12 +21,12 @@
     ],
     "checkver": {
         "url": "https://github.com/Neutree/COMTool/releases",
-        "regex": "comtool_windows_v([\\d.]+).zip"
+        "regex": "comtool_windows_v([\\d.]+).7z"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Neutree/COMTool/releases/download/v$version/comtool_windows_v$version.zip",
+                "url": "https://github.com/Neutree/COMTool/releases/download/v$version/comtool_windows_v$version.7z",
                 "hash": ""
             }
         }
