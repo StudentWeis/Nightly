@@ -5,7 +5,6 @@
 ## Manifest Lists
 
 - [Serial-Port-Plotter](https://github.com/CieNTi/serial_port_plotter)
-- [YouDaoDict](http://cidian.youdao.com/)
 - [COMTool](https://github.com/Neutree/COMTool)
 
 How do I install these manifests?
